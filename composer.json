@@ -1,0 +1,29 @@
+{
+    "name" : "dcarbone/table-mapper",
+    "description" : "Complex HTML parsing helper",
+    "type" : "library",
+
+    "license" : "MIT",
+    "keywords" : [
+        "html table",
+        "domdocument"
+    ],
+    "authors" : [
+        {
+            "name" : "Daniel Carbone",
+            "email" : "daniel.p.carbone@gmail.com"
+        }
+    ],
+
+    "homepage": "https://github.com/dcarbone/table-mapper",
+
+    "require" : {
+        "php" : ">=5.3.3",
+        "lib-libxml" : "*"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "DCarbone\\" : "lib/"
+        }
+    }
+}
