@@ -22,8 +22,8 @@
         "lib-libxml" : "*"
     },
     "autoload" : {
-        "psr-0" : {
-            "DCarbone\\" : "lib/"
+        "psr-4" : {
+            "DCarbone\\" : ""
         }
     }
 }

@@ -54,6 +54,8 @@ class TableMapper
                 /** @var \DOMElement $tr */
                 $tr = $trs->item($tri);
 
+                $this->rowOffsets[$rowGroupi]['lastRow'] = ($tri > 0 ? $tri - 1 : $tri);
+
                 $this->rowOffsets[$rowGroupi] = array(
                     'firstRow' => $tri
                 );
@@ -72,8 +74,6 @@ class TableMapper
                 $this->parseRowGroup($this->rowCellMap[$rowGroupi], $this->rowGroups[$rowGroupi], $rowSpan, $tr, $rowParseCallback, $cellParseCallback);
 
                 $tri += $rowSpan;
-
-                $this->rowOffsets[$rowGroupi]['lastRow'] = ($tri - 1);
             }
         }
     }
